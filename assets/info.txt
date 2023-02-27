@@ -1,0 +1,9 @@
+Un client vous commande un site identique a celui-ci :
+ https://nicepage.com/css-templates/preview/teaching-practices-3840270?device=desktop 
+
+
+Reproduire le site avec ses animations (class hover dsans js), uniquement en desktop et mobile . 
+Les assets de contenu sont libre.
+
+Vous pouvez vous aider de ce site pour faire vos animation css:
+ https://css3generator.com/.

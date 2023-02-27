@@ -1,0 +1,696 @@
+@font-face {
+  font-family: "Anime Ace BB";
+  font-weight: 200;
+  src: url(assets/fonts/animeace2_reg.ttf) format(truetype);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+.page_container {
+  background-color: yellow;
+}
+
+/* NAV */
+
+nav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2em;
+  background-color: white;
+}
+
+nav img {
+  width: 20em;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3em;
+}
+
+.menu_container i {
+  font-size: 1.7em;
+  transition: 0.3s;
+}
+
+.menu_container i:hover {
+  color: red;
+}
+
+
+/* END NAV */
+
+/* HEADER */
+
+.main_header {
+  width: auto;
+  background-color: yellow;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.main_header img {
+  position: relative;
+  left: 25%;
+  z-index: 0;
+  height: 36em;
+  width: 36em;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.main_header h1 {
+  position: absolute;
+  font-size: 2em;
+  font-family: "Anime Ace BB";
+  text-align: left;
+  z-index: 1;
+  background-color: yellow;
+  top: 12em;
+  left: 45%;
+  padding-left: 0.5em;
+  padding-right: 1.9em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 20em;
+  border-radius: 10px;
+}
+
+.skill_cards_container {
+    position: absolute;
+    left: 45%;
+    bottom: 4em;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 8px 5px; 
+    width: 35em; 
+    height: 20em; 
+}
+
+.skill_card {
+    font-family: "Anime Ace BB";
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    height: 10em;
+    width: 10em;
+    background-color: white;
+    margin-bottom: 1em;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 3px 10px 1px rgba(191, 191, 161, 0.458);
+}
+
+.skill_card img {
+  color: white;
+  height: 4em;
+  padding: 10px;
+  border: 5px dotted red;
+  border-radius: 50%;
+}
+
+/* GRID CARDS ICONS  */
+
+img.ju_jitsu {
+  height: auto;
+  width: 4em;
+}
+
+img.karate {
+  height: auto;
+  width: 4em;
+}
+
+img.aikido {
+  height: auto;
+  width: 4em;
+}
+
+img.punch {
+  height: auto;
+  width: 4em;
+}
+
+img.ninja {
+  height: auto;
+  width: 4em;
+}
+
+img.kimono {
+  height: auto;
+  width: 4em;
+}
+
+/* END GRID CARDS ICONS */
+
+/* TEACHERS */
+
+.teachers_container {
+  margin-top: 11em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.teachers_container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.teachers_container h2 {
+  font-family: "Anime Ace BB";
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+}
+
+.teachers_container header p {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+
+.teachers_card_container {
+  margin-top: 4em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.teacher_card {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: white;
+  padding: 2.5em 1.5em;
+  border-radius: 12px;
+  box-shadow: 1px 3px 10px 1px rgba(191, 191, 161, 0.92)
+}
+
+.teacher_card img {
+  height: 23em;
+  width: 17em;
+  border-radius: 12px;
+}
+
+.teacher_card h4 {
+  font-family: 'Anime Ace BB';
+  letter-spacing: 5px;
+}
+
+.teacher_card p {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.teacher_card h5 {
+  font-size: 1em;
+  font-family: 'Kalam';
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* END TEACHERS */
+
+/* PRODUCT SECTION */
+
+.products_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.products_container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products_container header h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-family: 'Anime Ace BB';
+  font-size: x-large;
+  text-align: center;
+  line-height: 45px;
+}
+
+.products_container header p {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  line-height: 18px;
+}
+
+.product_card_container {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 20px 30px;
+  width: 55em; 
+  height: 15em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  
+  }
+
+.product_card {
+  width: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 3px 10px 1px rgba(191, 191, 161, 0.562)
+}
+
+.product_card p {
+  font-family:'Kalam', cursive;
+  line-height: 16px;
+}
+
+.product_card h3 {
+  font-family: 'Anime Ace BB';
+  font-size: 1.1em;
+}
+
+.product_card i {
+  transform: translate(90%);
+  color: red;
+  font-size: 1.2em;
+}
+
+.red_ribbon {
+  height: 20vh;
+  width: 93.5vw;
+  background-color: red;
+  translate: 0px -14em;
+}
+
+/* END PRODUCT SECTION */
+
+/* STATS SECTION */
+
+.stats_infos_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  margin-bottom: 4em;
+}
+
+.stats_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;
+  width: 20em; 
+  height: 20em; 
+  gap: 1.2em;
+}
+
+.data_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  /* border: 2px dotted blue; */
+}
+
+.data_section h2 {
+  font-family: 'Anime Ace BB';
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.data_section p {
+  font-family: 'Kalam', cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.stats_opendoor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+}
+
+.stats_opendoor h2 {
+  font-family: 'Anime Ace BB';
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 25px;
+}
+
+.stats_opendoor p {
+  font-family: 'Kalam', cursive;
+}
+
+.stats_opendoor button {
+  font-family: 'Anime Ace BB';
+  background-color: rgba(255, 0, 0, 0.843);
+  border: none;
+  border-radius: 50px;
+  width: 35%;
+  padding: 1.3em 0;
+  transition: 0.5s;
+}
+
+.stats_opendoor button:hover {
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* END STATS SECTION */
+
+/* MISSION SECTION */
+
+.mission_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  margin-bottom: -13.5em;
+}
+
+.mission_container img {
+  height: 40em;
+  width: 32em;
+  border: 8px solid black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px 2px rgb(47, 47, 46)
+}
+
+.mission_card {
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: white;
+  height: auto;
+  width: 25em;
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  translate: -13em -22.5em;
+}
+
+.mission_card h2 {
+  font-family: 'Anime Ace BB';
+}
+
+.mission_card p {
+  font-family: 'Kalam', cursive;
+  font-size: 1.1em;
+  line-height: 28px;
+}
+
+.mission_card button {
+  width: 60%;
+  border: none;
+  background-color: red;
+  letter-spacing: 1px;
+  padding: 1em 3em;
+  border-radius: 20px;
+  margin-top: 2em;
+  transition: 0.4s;
+}
+
+.mission_card button:hover {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: rgba(255, 255, 0, 0.791);
+} 
+
+/* MISSION SECTION END */
+
+/* TESTIMONIES */
+
+.testimonies_container {
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 400px 150px 400px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: justify;
+  background-color: white;
+
+}
+
+.testimonies_container img {
+  width: 100%;
+  border-radius: 50%;
+  border: 6px solid black;
+}
+
+.testimonies_container i {
+  color: red;
+  font-size: 4em;
+  margin-right: 3em;
+}
+
+#nick_twitter {
+  margin-left: 5em;
+}
+
+.testimony_card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimony_card_text h5 {
+  font-family: 'Anime Ace BB', cursive;
+
+}
+
+.testimony_card_text p {
+  font-family: 'Kalam', cursive;
+  line-height: 18px;
+}
+
+/* END TESTIMONIES */
+
+/* CEO TESTIMONY */
+
+.ceo_testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  margin-bottom: 10em;
+}
+
+.ceo_testimony i {
+  font-size: 3em;
+}
+
+.ceo_testimony img {
+  position: absolute;
+  margin-top: 5em;
+  z-index: 1;
+  height: 18em;
+  width: 15em;
+  border-radius: 50%;
+}
+
+.ceo_testimony p {
+  height: 30%;
+  width: 60%;
+  font-family: 'Anime Ace BB', cursive;
+  font-size: large;
+  text-align: center;
+  border-radius: 15px;
+  background-color: white;
+  padding: 8em 2em 2em 2em;
+  margin-top: 15em;
+}
+
+.ceo_testimony figcaption h6 {
+  font-family: 'Anime Ace BB';
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+/* END TESTIMONIES */
+
+/* CONTACT FORM */
+
+.contact_container {
+  background-color: white;
+}
+
+.contact_container img {
+  width: 25em;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form h2 {
+  font-family: 'Anime Ace BB', cursive;
+  border: 2px solid black;
+  width: 60%;
+  align-self: center;
+  border-radius: 15px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.form_img_container {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.form_img_container label {
+  text-align: left;
+}
+
+.form_img_container form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+form label, input {
+  font-family: 'Kalam', cursive;
+}
+
+form input {
+  height: 3em;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+form textarea {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#form_submit {
+  font-family: 'Anime Ace BB';
+  border: none;
+  width: 80%;
+  align-self: center;
+  font-weight: bolder;
+  background-color: yellow;
+  border: 5px dotted black;
+  border-radius: 20px;
+}
+
+#form_submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.subscribe_container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* END CONTACT FORM */
+
+/* CONTACT CARDS */
+
+.contact_cards {
+  margin-top: 4em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact_cards p {
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+}
+
+.contact_cards address h4 {
+  font-family: 'Anime Ace BB', cursive;
+}
+
+.time_card h4 {
+  font-family: 'Anime Ace BB',cursive;
+}
+
+.call_card, 
+.location_card, 
+.time_card {
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: yellow;
+  height: auto;
+  width: 18.5%;
+  padding: 1.5em 1em;
+}
+
+/* END CONTACT CARDS */
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 2em;
+}
+
+footer span {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: 'Anime Ace BB';
+}
